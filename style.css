@@ -134,7 +134,7 @@ button{
     opacity:0.5;
 }
 
-
+.pointer {cursor: pointer;}
 
 h1{
     font-size:1.5em;
@@ -147,18 +147,18 @@ h1{
 @media screen and (min-width:1024px){
 
     .toggleButton:hover{
-        border: cornflowerblue solid;
+        outline: cornflowerblue solid;
     }
 
     .editButton:hover{
-        border:1px solid;
-        border-color:#bcbcbc;
+        outline:1px solid;
+        outline-color:#bcbcbc;
         border-radius: 25px 25px;
     }
 
     .deleteButton:hover{
-        border:1px solid;
-        border-color:#bcbcbc;
+        outline:1px solid;
+        outline-color:#bcbcbc;
         border-radius: 25px 25px;
     }
 
