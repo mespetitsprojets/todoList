@@ -67,10 +67,10 @@ addToDoButton2.onclick = function(){
     toggleButton.classList.toggle('toggleButton_click');
   };
 
-  var modifyButton = document.createElement("button");
-  modifyButton.innerHTML='<ion-icon name="create-outline"></ion-icon>'
-  modifyButton.onclick = function() {
-    return;
+  var editButton = document.createElement("button");
+  editButton.innerHTML='<ion-icon name="create-outline"></ion-icon>'
+  editButton.onclick = function(){
+    editTask(paragraph);
   };
 
   var deleteButton = document.createElement("button");
@@ -81,7 +81,7 @@ addToDoButton2.onclick = function(){
 
   taskContainer.appendChild(toggleButton);
   taskContainer.appendChild(paragraph);
-  taskContainer.appendChild(modifyButton);
+  taskContainer.appendChild(editButton);
   taskContainer.appendChild(deleteButton);
 
   inputField2.value="";
@@ -89,7 +89,7 @@ addToDoButton2.onclick = function(){
   taskContainer.classList.add('task_container');
   toggleButton.classList.add('toggleButton');
   paragraph.classList.add('paragraph_style');
-  modifyButton.classList.add('modifyButton');
+  editButton.classList.add('editButton');
   deleteButton.classList.add('deleteButton');
 
 }
@@ -97,6 +97,17 @@ addToDoButton2.onclick = function(){
 clearAll2.onclick = function(){
   while(toDoContainer2.firstChild){
     toDoContainer2.removeChild(toDoContainer2.firstChild);
+  }
+}
+
+function editTask(paragraph){
+  var paragraphTextElement = paragraph.firstChild;
+  var paragraphText = paragraphTextElement.textContent;
+
+  var newparagraphText = prompt("Oops, je rectifie:", paragraphText);
+
+  if( newparagraphText != ""){
+    paragraphTextElement.textContent = newparagraphText;
   }
 }
 
