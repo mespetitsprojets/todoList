@@ -81,7 +81,8 @@ addToDoButton2.onclick = function(){
   taskContainer.appendChild(paragraph);
   taskContainer.appendChild(editButton);
   taskContainer.appendChild(deleteButton);
-  
+
+  // on vide la case inputField  
   inputField2.value="";
 
   // on applique les style css
