@@ -85,13 +85,10 @@ addToDoButton2.onclick = function(){
   inputField2.value="";
 
   taskContainer.classList.add('task_container');
-  toggleButton.classList.add('toggleButton');
-  toggleButton.classList.add('pointer');
+  toggleButton.classList.add('toggleButton','pointer');
   paragraph.classList.add('paragraph_style');
-  editButton.classList.add('editButton');
-  editButton.classList.add('pointer');
-  deleteButton.classList.add('deleteButton');
-  deleteButton.classList.add('pointer');
+  editButton.classList.add('editButton','pointer');
+  deleteButton.classList.add('deleteButton','pointer');
 }
 
 clearAll2.onclick = function(){
