@@ -1,7 +1,6 @@
-var addToDoButton = document.getElementById('addToDo');
-var toDoContainer = document.getElementById('toDoContainer');
-var inputField = document.getElementById('inputField');
-var body = document.getElementById('body');
+// var addToDoButton = document.getElementById('addToDo');
+// var toDoContainer = document.getElementById('toDoContainer');
+// var inputField = document.getElementById('inputField');
 
 var addToDoButton2 = document.getElementById('addToDo2');
 var toDoContainer2 = document.getElementById('toDoContainer2');
@@ -62,11 +61,16 @@ addToDoButton2.onclick = function(){
 
   toDoContainer2.appendChild(taskContainer);
 
-
   var toggleButton = document.createElement("button");
   toggleButton.onclick = function() {
     paragraph.classList.toggle('paragraph_click');
     toggleButton.classList.toggle('toggleButton_click');
+  };
+
+  var modifyButton = document.createElement("button");
+  modifyButton.innerHTML='<ion-icon name="create-outline"></ion-icon>'
+  modifyButton.onclick = function() {
+    return;
   };
 
   var deleteButton = document.createElement("button");
@@ -77,15 +81,17 @@ addToDoButton2.onclick = function(){
 
   taskContainer.appendChild(toggleButton);
   taskContainer.appendChild(paragraph);
+  taskContainer.appendChild(modifyButton);
   taskContainer.appendChild(deleteButton);
 
   inputField2.value="";
 
-  paragraph.classList.add('paragraph_style');
-  toggleButton.classList.add('toggleButton');
-  deleteButton.classList.add('deleteButton');
   taskContainer.classList.add('task_container');
-  
+  toggleButton.classList.add('toggleButton');
+  paragraph.classList.add('paragraph_style');
+  modifyButton.classList.add('modifyButton');
+  deleteButton.classList.add('deleteButton');
+
 }
 
 clearAll2.onclick = function(){

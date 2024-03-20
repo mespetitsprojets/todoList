@@ -88,15 +88,19 @@ button{
     transition: 0.2s;
 }
 
-
-
-.deleteButton{
-    display: flex;
-    background-color:transparent;
-    transition:0.2s;
+.modifyButton{
+    height: 20px;
+    width: 40px;
+    background-color: transparent;
+    transition:0.2;
 }
 
-
+.deleteButton{
+    height: 20px;
+    width: 40px;
+    background-color: transparent;
+    transition:0.2;
+}
 
 .toggleButton_click{
     border: white solid;
@@ -115,8 +119,6 @@ button{
     transition:0.2s;
 }
 
-
-
 #clearAll2{
     height: 30px;
     width: 30px;
@@ -126,13 +128,13 @@ button{
     transition:0.2s;
 }
 
-
-
 .paragraph_click{
     color:midnightblue;
     text-decoration-line: line-through;
     opacity:0.5;
 }
+
+
 
 h1{
     font-size:1.5em;
@@ -146,6 +148,12 @@ h1{
 
     .toggleButton:hover{
         border: cornflowerblue solid;
+    }
+
+    .modifyButton:hover{
+        border:1px solid;
+        border-color:#bcbcbc;
+        border-radius: 25px 25px;
     }
 
     .deleteButton:hover{
