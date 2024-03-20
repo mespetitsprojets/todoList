@@ -53,8 +53,7 @@ addToDoButton2.onclick = function(){
   if(inputField2.value != ""){
     var paragraph = document.createElement('div');
     var taskContainer = document.createElement('div');
-  }
-  
+   
   paragraph.innerHTML = inputField2.value;
 
   toDoContainer2.appendChild(taskContainer);
@@ -77,19 +76,24 @@ addToDoButton2.onclick = function(){
     toDoContainer2.removeChild(taskContainer);
   };
 
+  // on imbrique les elements enfants dans le taskContainter
   taskContainer.appendChild(toggleButton);
   taskContainer.appendChild(paragraph);
   taskContainer.appendChild(editButton);
   taskContainer.appendChild(deleteButton);
-
+  
   inputField2.value="";
 
+  // on applique les style css
   taskContainer.classList.add('task_container');
   toggleButton.classList.add('toggleButton','pointer');
   paragraph.classList.add('paragraph_style');
   editButton.classList.add('editButton','pointer');
   deleteButton.classList.add('deleteButton','pointer');
+  }
 }
+
+//fonction clearAll
 
 clearAll2.onclick = function(){
   while(toDoContainer2.firstChild){
@@ -97,6 +101,7 @@ clearAll2.onclick = function(){
   }
 }
 
+//fonction editTask
 function editTask(paragraph){
   var paragraphTextElement = paragraph.firstChild;
   var paragraphText = paragraphTextElement.textContent;
