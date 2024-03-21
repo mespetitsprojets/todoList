@@ -9,8 +9,8 @@ body{
     width:100vw;
     display: flex;
     background-color: midnightblue;
-    flex-wrap: wrap;
-    padding: 5px 5px;
+    flex-wrap: wrap
+    padding: 5px;
 }
 
 section{
@@ -104,7 +104,7 @@ button{
     background-color:midnightblue;
 }
 
-#addToDo2{
+#addToDo{
     height: 50px;
     width: 100px;
     border-radius: 25px 25px 25px 25px;
@@ -116,7 +116,7 @@ button{
     transition:0.2s;
 }
 
-#clearAll2{
+#clearAll{
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -162,11 +162,11 @@ h1{
         border-radius: 25px 25px;
     }
 
-    #addToDo2:hover{
+    #addToDo:hover{
         background-color:cornflowerblue;
     }
 
-    #clearAll2:hover{
+    #clearAll:hover{
         background-color:rgb(151, 151, 151);
     }
 
