@@ -85,21 +85,18 @@ button{
     border: midnightblue solid;
     border-radius: 50%;
     background-color:#F5F5F5;
-    transition: 0.2s;
 }
 
 .editButton{
     height: 20px;
     width: 40px;
     background-color: transparent;
-    transition:0.2;
 }
 
 .deleteButton{
     height: 20px;
     width: 40px;
     background-color: transparent;
-    transition:0.2;
 }
 
 .toggleButton_click{
